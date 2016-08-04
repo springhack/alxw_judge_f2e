@@ -1,0 +1,28 @@
+#!/bin/bash
+
+NAME=$1
+
+if [ $# == 0 ];
+then
+    read NAME;
+fi
+
+echo "Make dir $NAME ..."
+mkdir -p $NAME
+echo 'Maked !'
+
+echo 'Copy files...'
+cp -rvf Model/* $NAME/
+echo 'Copied !'
+
+echo 'Default files ...'
+touch $NAME/src/index.js
+touch $NAME/src/index.css
+echo 'Maked up !'
+
+echo 'Install scripts ...'
+cd $NAME
+cnpm install
+echo 'Installed !'
+
+echo 'Finished !'
