@@ -8,7 +8,7 @@ then
 fi
 
 echo "Make dir $NAME ..."
-mkdir -p $NAME
+mkdir -p $NAME/src
 echo 'Maked !'
 
 echo 'Copy files...'
