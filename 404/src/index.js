@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-let main = document.body;
-
 class App extends React.Component {
     constructor(props) {
         super();
@@ -29,4 +27,4 @@ class App extends React.Component {
     }
 }
 
-ReactDOM.render(<App />, main);
+ReactDOM.render(<App />, document.body);
