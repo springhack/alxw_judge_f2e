@@ -9,6 +9,7 @@ fi
 
 echo "Make dir $NAME ..."
 mkdir -p $NAME/src
+mkdir -p $NAME/static
 echo 'Maked !'
 
 echo 'Copy files...'
@@ -17,7 +18,6 @@ echo 'Copied !'
 
 echo 'Default files ...'
 touch $NAME/src/index.js
-touch $NAME/src/index.css
 echo 'Maked up !'
 
 echo 'Install scripts ...'
