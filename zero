@@ -13,7 +13,7 @@ mkdir -p $NAME/static
 echo 'Maked !'
 
 echo 'Copy files...'
-cp -rvf Model/* $NAME/
+cp -rvf Template/* $NAME/
 echo 'Copied !'
 
 echo 'Default files ...'
