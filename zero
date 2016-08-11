@@ -9,7 +9,6 @@ fi
 
 echo "Make dir $NAME ..."
 mkdir -p $NAME/src
-mkdir -p $NAME/static
 echo 'Maked !'
 
 echo 'Copy files...'
