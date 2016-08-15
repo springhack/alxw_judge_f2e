@@ -8,6 +8,10 @@ then
     read NAME;
 fi
 
+echo 'Make dir...'
+mkdir $NAME
+echo 'Maked !'
+
 echo 'Copy files...'
 yes n | cp -riv Template/* $NAME/
 echo 'Copied !'
