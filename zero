@@ -4,20 +4,13 @@ NAME=$1
 
 if [ $# == 0 ];
 then
+    echo -n 'Please input dir name:'
     read NAME;
 fi
 
-echo "Make dir $NAME ..."
-mkdir -p $NAME/src
-echo 'Maked !'
-
 echo 'Copy files...'
-cp -rvf Template/* $NAME/
+yes n | cp -riv Template/* $NAME/
 echo 'Copied !'
-
-echo 'Default files ...'
-touch $NAME/src/index.js
-echo 'Maked up !'
 
 echo 'Install scripts ...'
 cd $NAME
