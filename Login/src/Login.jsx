@@ -25,8 +25,9 @@ export default class Login extends React.Component {
     onLogin() {
         let user = ReactDOM.findDOMNode(this.refs.user).getElementsByTagName('input')[0].value;
         let pass = ReactDOM.findDOMNode(this.refs.pass).getElementsByTagName('input')[0].value;
-        fetch('Index', {
+        fetch('Status', {
             method : 'POST',
+            credentials : 'include',
             headers: {
                 'Content-Type' : 'application/x-www-form-urlencoded'
             },
@@ -41,11 +42,15 @@ export default class Login extends React.Component {
                 });
         }).then(json => {
                 if (json.result == 'success')
+                {
                     this.setState({
                         display : 'block',
                         content : 'Success'
                     });
-                else
+                    setTimeout(function () {
+                        location.href = 'Main';
+                    }, 1500);
+                } else
                     this.setState({
                         display : 'block',
                         content : json.reason
