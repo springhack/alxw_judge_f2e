@@ -25,7 +25,7 @@ export default class Login extends React.Component {
     onLogin() {
         let user = ReactDOM.findDOMNode(this.refs.user).getElementsByTagName('input')[0].value;
         let pass = ReactDOM.findDOMNode(this.refs.pass).getElementsByTagName('input')[0].value;
-        fetch('Status', {
+        fetch('Login', {
             method : 'POST',
             credentials : 'include',
             headers: {

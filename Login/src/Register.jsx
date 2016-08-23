@@ -45,7 +45,7 @@ export default class Register extends React.Component {
             });
             return;
         }
-        fetch('Status', {
+        fetch('Login', {
             method : 'POST',
             credentials : 'include',
             headers: {
