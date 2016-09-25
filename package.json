@@ -1,0 +1,35 @@
+{
+  "name": "alxw-online-judge-component",
+  "version": "1.0.0",
+  "description": "Components for alxw judge system",
+  "main": "main.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --progress --colors",
+    "build": "webpack --progress --colors"
+  },
+  "keywords": [
+    "SpringHack"
+  ],
+  "author": "SpringHack",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "latest",
+    "babel-loader": "latest",
+    "babel-plugin-transform-react-jsx": "latest",
+    "babel-preset-es2015": "latest",
+    "babel-preset-react": "latest",
+    "extract-text-webpack-plugin": "latest",
+    "html-webpack-plugin": "latest",
+    "less": "latest",
+    "css-loader": "latest",
+    "less-loader": "latest",
+    "style-loader": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "webpack": "latest",
+    "lodash": "latest",
+    "muicss": "latest"
+  },
+  "dependencies": {
+  }
+}
