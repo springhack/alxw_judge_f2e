@@ -45,13 +45,13 @@ export default class Register extends React.Component {
             });
             return;
         }
-        fetch('Login', {
+        fetch('/user/register', {
             method : 'POST',
             credentials : 'include',
             headers: {
                 'Content-Type' : 'application/x-www-form-urlencoded'
             },
-            body : `action=register&user=${user}&pass=${pass}&nick=${nick}&verify=${verify}`
+            body : `username=${user}&password=${pass}&nickname=${nick}&verify=${verify}`
         }).then(res => {
             if (res.ok)
                 return res.json()
@@ -62,19 +62,19 @@ export default class Register extends React.Component {
                     vimg : `/${new Date()}/ValidationCode`
                 });
         }).then(json => {
-                if (json.result == 'success')
+                if (json.error)
                 {
+                    this.setState({
+                        display : 'block',
+                        content : json.error,
+                        vimg : `/${new Date()}/ValidationCode`
+                    });
+                } else {
                     this.setState({
                         display : 'block',
                         content : 'Success'
                     });
-                    //TODO
-                } else
-                    this.setState({
-                        display : 'block',
-                        content : json.reason,
-                        vimg : `/${new Date()}/ValidationCode`
-                    });
+                }
         }).catch(err => {
             console.log(err);
         });
