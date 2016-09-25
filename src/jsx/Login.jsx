@@ -31,7 +31,7 @@ export default class Login extends React.Component {
             headers: {
                 'Content-Type' : 'application/x-www-form-urlencoded'
             },
-            body : `action=login&user=${user}&pass=${pass}`
+            body : `username=${user}&password=${pass}`
         }).then(res => {
             if (res.ok)
                 return res.json()
