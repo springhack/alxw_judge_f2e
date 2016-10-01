@@ -6,7 +6,7 @@ import Dialog from './Dialog.jsx';
 
 export default class Register extends React.Component {
     constructor(props) {
-        super();
+        super(props);
         this.state = {
             vimg : '/ValidationCode',
             display : 'none',

@@ -9,7 +9,7 @@ import '../less/Index.less';
 
 export default class Index extends React.Component {
     constructor(props) {
-        super();
+        super(props);
         this.state = {
             //TODO
         };

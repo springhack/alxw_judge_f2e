@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Appbar, Form, Container, Panel, Input, Button} from 'muicss/react';
+import {browserHistory} from 'react-router';
 
 import Dialog from './Dialog.jsx';
 
 export default class Login extends React.Component {
     constructor(props) {
-        super();
+        super(props);
         this.state = {
             display : 'none',
             content : ''
@@ -53,7 +54,7 @@ export default class Login extends React.Component {
                     content : 'Success'
                 });
                 setTimeout(function () {
-                    this.props.history.pushState(null, '/Main');
+                    browserHistory.push('/Main');
                     //location.href = 'Main';
                 }, 1500);
             }

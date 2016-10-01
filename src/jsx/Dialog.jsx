@@ -3,7 +3,7 @@ import {Appbar, Form, Container, Panel, Input, Button} from 'muicss/react';
 
 export default class Dialog extends React.Component {
     constructor(props) {
-        super();
+        super(props);
         this.state = {
             style : {
                 zIndex : '10',
