@@ -19,7 +19,7 @@ export default class Index extends React.Component {
             <Container>
                 <Panel className='header'>
                     <h2>今天的风儿好喧嚣</h2>
-                    <Login className='login mui-form--inline' />
+                    <Login className='login mui-form--inline' history={this.props.history} />
                 </Panel>
                 <Panel className='main'>
                     <img src='/res/img/maccode.jpg' className='left' />

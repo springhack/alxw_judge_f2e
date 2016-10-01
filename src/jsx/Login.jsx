@@ -12,6 +12,7 @@ export default class Login extends React.Component {
             display : 'none',
             content : ''
         };
+        console.log(props);
     }
     render() {
         return (
@@ -54,7 +55,7 @@ export default class Login extends React.Component {
                     content : 'Success'
                 });
                 setTimeout(function () {
-                    browserHistory.push('/Main');
+                    this.props.history.pushState(null, '/Main');
                     //location.href = 'Main';
                 }, 1500);
             }
