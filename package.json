@@ -18,18 +18,18 @@
     "babel-plugin-transform-react-jsx": "latest",
     "babel-preset-es2015": "latest",
     "babel-preset-react": "latest",
+    "css-loader": "latest",
     "extract-text-webpack-plugin": "latest",
     "html-webpack-plugin": "latest",
     "less": "latest",
-    "css-loader": "latest",
     "less-loader": "latest",
-    "style-loader": "latest",
+    "lodash": "latest",
+    "muicss": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "webpack": "latest",
-    "lodash": "latest",
-    "muicss": "latest"
+    "react-router": "^2.8.1",
+    "style-loader": "latest",
+    "webpack": "latest"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

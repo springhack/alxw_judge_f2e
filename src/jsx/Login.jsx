@@ -53,7 +53,8 @@ export default class Login extends React.Component {
                     content : 'Success'
                 });
                 setTimeout(function () {
-                    location.href = 'Main';
+                    this.props.history.pushState(null, '/Main');
+                    //location.href = 'Main';
                 }, 1500);
             }
         }).catch(err => {
